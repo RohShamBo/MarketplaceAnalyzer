@@ -1,0 +1,33 @@
+{
+    "name": "NBA Top Shot Extension",
+    "description": "NBA Top Shot Extension",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "icons": {
+        "16": "./pizza-3-16.png",
+        "32": "./pizza-3-32.png",
+        "48": "./pizza-3-48.png",
+        "128": "./pizza-3-128.png"
+    },
+    "background": {
+        "scripts": ["./background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.nbatopshot.com/listings/p2p/*",
+                "http://www.nbatopshot.com/listings/p2p/*"
+            ],
+            "js": [
+                "foreground.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "storage",
+        "https://www.nbatopshot.com/listings/p2p/*",
+        "http://www.nbatopshot.com/listings/p2p/*"
+    ]
+}
