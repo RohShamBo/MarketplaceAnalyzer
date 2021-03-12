@@ -41,18 +41,20 @@ var sortDropdown = function(options) {
 
     for (var i = 1; i < options.length; i++) {
         options[i] = optionsArray[i];
-        var pfp = options[i].price / 0.95;
-        options[i].pfp = Math.ceil(pfp);
-        options[i].innerText += " - [" + options[i].counter + "] - PFP: $" + options[i].pfp;
+
+        var pfpText = options[i].innerText;
+        if (pfpText.includes('PFP') != 1) {
+            var pfp = options[i].price / 0.95;
+            options[i].pfp = Math.ceil(pfp);
+            options[i].innerText += " - [" + options[i].counter + "] - PFP: $" + options[i].pfp;
+        }
     }
 };
 
-    sortbtn = document.createElement('button');
-    sortbtn.innertext = "SORT";
-    sortbtn.classname = 'tsbsortbutton';
-    sortbtn.id = 'sortbuttons'
-
-    var dropdown = document.getElementById('moment-detailed-serialNumber');
-    if (dropdown !== null) {
+    var dropdownCheck = setInterval(function() {
+        var dropdown = document.getElementById('moment-detailed-serialNumber');
+        if (dropdown !== null && dropdown.length) {
             sortDropdown(dropdown.options);
-    }
+            clearInterval(dropdownCheck)
+        }
+    },100);
