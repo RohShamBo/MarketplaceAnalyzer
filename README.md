@@ -1,4 +1,4 @@
-# MarketplaceAnalyzer2.0
+# MarketplaceAnalyzer
 NBA Top Shot Marketplace Listing Analyzer
 Created by: RohShamBo
 
