@@ -5,7 +5,7 @@ Created by: RohShamBo
 This extension modifies the marketplace listing dropdown:
   - Sorts by price (lowest ask - ascending)
   - Removes duplicate price listings (displays lowest serial number only)
-  - Diplays number of listings at that price (#)
+  - Displays number of listings at that price (#)
   - Displays PFP (Price for Profit) - resale price to make profit after 5% marketplace fee
 
 To use extension:
