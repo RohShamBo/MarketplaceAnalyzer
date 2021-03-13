@@ -1,5 +1,6 @@
 # MarketplaceAnalyzer2.0
 NBA Top Shot Marketplace Listing Analyzer
+Created by: RohShamBo
 
 This extension modifies the marketplace listing dropdown:
   - Sorts by price (lowest ask - ascending)
