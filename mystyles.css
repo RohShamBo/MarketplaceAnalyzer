@@ -1,7 +1,7 @@
 .content {
-    width: 310px;
-    height: 300px;
-    margin: 20px 5px;
+    width: 375px;
+    height: 270px;
+    margin: 30px 5px;
 }
 
 .title {
@@ -60,4 +60,25 @@
     cursor: pointer;
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(255, 255, 255);
+}
+
+.box {
+    text-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 12ch;
+    padding: 10px 10px;
+    width: fit-content;
+    max-height: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Shapiro, sans-serif;
+    font-weight: 700;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    white-space: pre;
+    background-color: rgb(50, 94, 255);
 }
