@@ -46,7 +46,7 @@ var sortDropdown = function(options) {
         if (pfpText.includes('PFP') != 1) {
             var pfp = options[i].price / 0.95;
             options[i].pfp = Math.ceil(pfp);
-            options[i].innerText += " - [" + options[i].counter + "] - PFP: $" + options[i].pfp;
+            options[i].innerText += " - (" + options[i].counter + ") - PFP: $" + options[i].pfp;
         }
     }
 };
